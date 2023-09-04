@@ -4,13 +4,16 @@
     }
 </style>
 
+<%= link_to :display_all, "/books?status=all" %><br>
+<%= link_to :display_available, "/books?status=#{true}" %>
+
 <table>
     <tr>
         <th>Name</th>
         <th>Price</th>
         <th>Availability</th>
     </tr>
-    
+
     <% @books.each do |book| %>
         <tr>
             <td><%= book.name %></td>

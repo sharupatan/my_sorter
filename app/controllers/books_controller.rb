@@ -2,7 +2,13 @@ class BooksController < ApplicationController
 	before_action :set_book, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@books = Book.all
+		if params[:status] == 'true'
+			@status = true
+		else
+			@status = [true,false]
+		end
+		
+		@books = Book.where(status: @status)
 	end
 
 	def new
