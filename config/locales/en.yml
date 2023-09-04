@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  book_add: 'Book added successfully!'
+  book_delete: 'Book deleted successfully!'
+  book_update: 'Book updated successfully!'

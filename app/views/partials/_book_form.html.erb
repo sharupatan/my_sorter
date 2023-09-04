@@ -1,0 +1,10 @@
+<%= form_with model: @book, class: 'm-auto col-4' do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control' %>
+    <%= form.label :price %>
+    <%= form.number_field :price, class: 'form-control' %>
+    <%= form.label :status %>
+    <%= form.check_box :status %>
+
+    <%= form.submit :submit %>
+<% end %>
